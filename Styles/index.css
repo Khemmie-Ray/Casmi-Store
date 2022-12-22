@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:wght@500;700&display=swap");
+
+:root {
+  --brown: #945757;
+  --red: #ff0c0c;
+  --black: #111111;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    background-color: var(--brown);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    /* font-family: 'Playfair Display', serif;  */
+} 
+
+.main-container {
+  width: 94%;
+  background-color: var(--black);
+  margin: 0 auto;
+}
+
+/* =============================
+           Typography 
+==============================*/
+a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+h1, a {
+    font-family: 'Playfair Display', serif; 
+}
+
+li {
+    list-style: none;
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+/* =============================
+           Layout 
+==============================*/
+
+header, .navList,
+.info-container,
+.main-images {
+    display: flex;
+}
+
+.info-container {
+    padding: 1em;
+}
+
+.info-container,
+.main-images {
+    justify-content: space-between;
+}
+
+.box img {
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+.main-images {
+    width: 60%;
+    padding: .5em;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 48%;
+}
+
+.navList a {
+    margin-left: 1.5em;
+    color: var(--white);
+}
+
+header {
+    align-items: center;
+}
+
+header {
+    width: 90%;
+    margin: 1em auto;
+    justify-content: space-between;
+    padding: .5em;
+}
+
+.info {
+    width: 35%;
+    text-align: center;
+    padding: .5em;
+}
+
+.mobileMenu,
+.closeBtn {
+    display: none;
+}
+
+span {
+  color: var(--red);
+}
+
+button {
+  color: var(--white);
+  background-color: var(--red);
+  border-radius: 50px;
+  padding: 0.6em 1.5em;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-top: 1.5em;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+}
+
+button:hover,
+button:focus {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.footer-images {
+  text-align: right;
+  margin: 2rem 3.5rem;
+}
+
+.footer-images img {
+  margin-bottom: 2rem;
+  padding: 0 0.6rem;
+  height: 2rem;
+  width: 3.3rem;
+  cursor: pointer;
+}
+
+.icons {
+    width: 1rem;
+    margin-right: .5em;
+}
+
+input {
+    padding: 1em;
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+textarea {
+    width: 100%;
+}
+
+.form {
+    width: 80%;
+    margin: 3em auto;
+    box-shadow: 2px 2px 8px var(--brown);
+    padding: 1em;
+}
+
+/* =============================
+        Media Queries 
+==============================*/
+@media (max-width: 600px) {
+    .info-container,
+    .main-images,
+    .navList {
+        flex-direction: column;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .mobileMenu {
+        position: absolute;
+        left: 15%;
+        display: block;
+    }
+
+    nav {
+        height: 50vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: var(--brown);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .navList {
+        transition: 0.3s;
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .closeBtn {
+        display: block;
+        position: absolute;
+        top: 6%;
+        left: 8%;
+    }
+
+    .main-images {
+        order: 2;
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .info {
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    .form {
+        width: 100%;
+    }
+}

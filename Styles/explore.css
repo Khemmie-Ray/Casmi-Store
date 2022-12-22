@@ -1,0 +1,60 @@
+.explore {
+    min-height: 100vh;
+}
+
+.e-content {
+    text-align: center;
+}
+
+.e-title {
+    /* color: var(--brown); */
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.e-title span {
+    color: var(--red);
+}
+
+select {
+    padding: 1em;
+    width: 100%;
+}
+
+.searchBar {
+    margin: 2em auto;
+    width: 50%;
+}
+
+.e-images {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardImg {
+    width: 100%;
+    margin-bottom: .5em;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    width: 22%;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    .searchBar {
+        width: 90%;
+    }
+}
