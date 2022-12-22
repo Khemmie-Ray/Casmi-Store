@@ -6,13 +6,13 @@ Our MVP for this project is to ensure that users have access to a variety of fas
 
 ## Authors 
 
--- Atoyebi Oluwakemi
--- Ehigie Paul
+* Atoyebi Oluwakemi
+* Ehigie Paul
 
 ## Resources
 
---Unsplash
---Pexels
+* Unsplash
+* Pexels
 
 ## Links
 
