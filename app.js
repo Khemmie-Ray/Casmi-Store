@@ -1,9 +1,7 @@
 const productP = document.querySelector("#product")
 const imageContainer = document.querySelector(".col-1")
-const randomPrice = Math.floor(Math.random() * 300)
 
 const link = "https://api.pexels.com/v1/search?query=fashion";
-// const link2 = "https://api.pexels.com/v1/search?query=nature"
 
 fetch(link, {
     headers: {
@@ -18,12 +16,21 @@ fetch(link, {
 
     const products = data.photos.map((product) => {
         return `<div class="card" onclick='getProduct(${JSON.stringify(product)})'><img src=${
-          product.src.tiny
+          product.src.portrait
         } alt="" class="cardImg" data-id=${product.id}/></div>`;
       });
   
       imageContainer.innerHTML = products.join(" ");
     });
+
+    
+  const getProduct = (product) => {
+    console.log(product)
+    localStorage.setItem("product", JSON.stringify(product))
+    const url = window.location.href.replace("shop.html", "product.html");
+    window.location.href = url;
+  }
+
    
     // for (let i = 0; i < 15; i++) {
     //     let result = data.photos[i].src.tiny;
@@ -54,6 +61,5 @@ fetch(link, {
     //     }
     //     }    
 
-    console.log(randomPrice)    
 
 
