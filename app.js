@@ -1,4 +1,3 @@
-// const productP = document.querySelector("#product")
 const imageContainer = document.querySelector(".col-1")
 
 const link = "https://api.unsplash.com/search/photos?query=fashion&per_page=20&client_id=RCPdqXnOWsf2C1dFCQlPSmsfwMREmSW-wrETwp7i-qU"
@@ -11,7 +10,8 @@ fetch(link, {
     console.log(data.results)
 
     const products = data.results.map((product) => {
-        return `<div class="card" onclick='getProduct(${JSON.stringify(product)})'><img src=${product.urls.small_s3} alt="" class="cardImg" data-id=${product.id}/></div>`;
+
+        return `<div class="card" onclick='getProduct(${JSON.stringify(product)})'><img src=${product.urls.small} alt="" class="cardImg" data-id=${product.id}/></div>`;
       });
   
       imageContainer.innerHTML = products.join(" ");
