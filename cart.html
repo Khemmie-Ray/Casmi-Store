@@ -30,7 +30,7 @@
       </header>
 
       <main>
-        <div class="cart-items">
+        <div class="cart-items" id="cart-item">
 
         </div>
       </main>
@@ -41,9 +41,28 @@
           <img src="images/Vector (2).png" alt="social-icon" />
           <img src="images/Vector (3).png" alt="social-icon" />
         </div>
-
-        <div></div>
       </footer>
     </div>
+    <!-- <script
+      const cartItems = JSON.parse(localStorage.getItem("cart"));
+      const cartDiv = document.getElementById("cart-item");
+      console.log(cartItems);
+      cartDiv.innerHTML = cartItems.map((item, index) =>
+          `<div class="cart-item" data-id=${item.id}>
+          <img src=${item.urls.small} alt=${item.alt_description} />
+          <h4>${item.id}</h4>
+          <h5>price</h5>
+          <button onclick="removeFromCart(event)">Remove</button>
+          </div>`).join("");
+cd Store
+
+      function removeFromCart(e) {
+        const localCart = JSON.parse(localStorage.getItem("cart"));
+        const id = e.currentTarget.parentNode.getAttribute("data-id");
+        const newCart = localCart.filter((item) => item.id !== id);
+        localStorage.setItem("cart", JSON.stringify(newCart));
+        window.location.reload();
+      }
+    </script> -->
   </body>
 </html>

@@ -1,8 +1,10 @@
 ## Casmi Store
 
-This is an e-commerce project for the portfolio project task for ALX Software Engineering program.
+Casmi store is a fashion store e-commerce project built for the ALX software engineering portfolio project task.
 
-Our MVP for this project is to ensure that users have access to a variety of fashion items and this we have ensured with the explore page.
+### Introduction
+
+The Most Viable Product(MVP) of this project is to ensure that users have access to a variety of fashion items and at a discounted price this we have ensured with the explore page. Each option request call on the explore page is used as placeholder for possible fashion vendors users can scroll through to find the one that best suit their need and accomodates their budget.
 
 ## Authors 
 
@@ -11,9 +13,8 @@ Our MVP for this project is to ensure that users have access to a variety of fas
 
 ## Resources
 
-* Unsplash
-* Pexels
+[Unsplash](https://unsplash.com)
 
 ## Links
 
-[Live Site](https://khemmie-ray.github.io/Casmi-Store/index.html)
+[Live Site](https://khemmie-ray.github.io/Casmi-Store/index.html) 
