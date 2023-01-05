@@ -92,6 +92,11 @@ header, .navList,
     color: var(--white);
 }
 
+.navList a:hover,
+.navList a:focus {
+    border-bottom: 2px solid var(--brown);
+}
+
 header {
     align-items: center;
 }
@@ -128,6 +133,7 @@ span {
   cursor: pointer;
   font-weight: 600;
   border: none;
+  transition: ease 0.7s;
 }
 
 .btn:hover,
@@ -152,6 +158,20 @@ span {
 .icons {
     width: 1rem;
     margin-right: .5em;
+}
+
+.submitBtn {
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 0;
+}
+
+.submitBtn:hover,
+.submitBtn:focus {
+    background-color: var(--brown);
+    color: var(--white);
+    transition: ease 0.7s;
 }
 
 input {
@@ -187,12 +207,12 @@ textarea {
 
     .mobileMenu {
         position: absolute;
-        left: 15%;
+        left: 10%;
         display: block;
     }
 
     nav {
-        height: 50vh;
+        height: 100vh;
         width: 0;
         position: fixed;
         z-index: 1;
@@ -209,6 +229,12 @@ textarea {
         top: 25%;
         width: 100%;
         text-align: center;
+        padding: 1em;
+
+    }
+
+    .navList li {
+        margin-bottom: 1.5em;
     }
 
     .closeBtn {
