@@ -23,6 +23,7 @@ The Most Viable Product(MVP) of this project is to ensure that users have access
 ## Links
 
 [Live Site](https://khemmie-ray.github.io/Casmi-Store/index.html) 
+
 [Design](https://www.figma.com/file/GdK1dhOJ97V2eNcIUzvDkX/Casmi-ecommerce-site?node-id=1%3A2&t=3S75cGF7jizNpThr-1)
 
 
@@ -37,9 +38,11 @@ We are open to contributions, improvements and constructive feedbacks.
 ## Authors 
 
 * Atoyebi Oluwakemi
----Roles
+
+--- Roles
 Creating the UI and responsive design of the project. Frontend developer -integrating the APIs on the website and setting up the shopping features.
 
 * Ehigie Paul
----Roles
+
+--- Roles
 Frontend developer - styling and building the home, contact and about page.
