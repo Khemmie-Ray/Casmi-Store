@@ -30,7 +30,7 @@
       </header>
 
       <main>
-        <div class="cart-items" id="cart-item">
+        <div class="cart-item" id="cart-items">
 
         </div>
       </main>
@@ -43,9 +43,9 @@
         </div>
       </footer>
     </div>
-    <!-- <script
+    <script>
       const cartItems = JSON.parse(localStorage.getItem("cart"));
-      const cartDiv = document.getElementById("cart-item");
+      const cartDiv = document.getElementById("cart-items");
       console.log(cartItems);
       cartDiv.innerHTML = cartItems.map((item, index) =>
           `<div class="cart-item" data-id=${item.id}>
@@ -53,8 +53,8 @@
           <h4>${item.id}</h4>
           <h5>price</h5>
           <button onclick="removeFromCart(event)">Remove</button>
-          </div>`).join("");
-cd Store
+          </div>`
+          ).join("");
 
       function removeFromCart(e) {
         const localCart = JSON.parse(localStorage.getItem("cart"));
@@ -63,6 +63,6 @@ cd Store
         localStorage.setItem("cart", JSON.stringify(newCart));
         window.location.reload();
       }
-    </script> -->
+    </script> 
   </body>
 </html>
