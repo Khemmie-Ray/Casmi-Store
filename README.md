@@ -42,12 +42,11 @@ We are open to contributions, improvements and constructive feedbacks.
 * Atoyebi Oluwakemi
 
 Roles
----
+
 Creating the UI and responsive design of the project. Frontend developer -integrating the APIs on the website and setting up the shopping features.
 
 * Ehigie Paul
 
-Roles
-<u>
+Role
 
 Frontend developer - styling and building the home, contact and about page.
