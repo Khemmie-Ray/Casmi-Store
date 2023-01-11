@@ -58,8 +58,17 @@ h1 + p {
 
 header, .navList,
 .info-container,
-.main-images {
+.main-images,
+.cart-wrapper {
     display: flex;
+}
+
+.cart-wrapper {
+    flex-direction: column;
+}
+
+button {
+    cursor: pointer;
 }
 
 .info-container {
@@ -200,7 +209,7 @@ textarea {
       background-color: #ecebf0 !important;
       border:0 !important;
       font-size: 10pt;
-     font-weight:800;
+      font-weight:700;
       display: inline-block;
       padding:10px 10px !important;
       cursor: pointer;
@@ -209,7 +218,12 @@ textarea {
   
   .goog-te-gadget-simple  span {
      color:#3e3065 !important;
-  
+  }
+
+  #cart-items {
+    width: 40%;
+    flex-wrap: wrap;
+    margin: 0 auto;
   }
 
 /* =============================
@@ -251,7 +265,6 @@ textarea {
         width: 100%;
         text-align: center;
         padding: 1em;
-
     }
 
     .navList li {
@@ -282,5 +295,10 @@ textarea {
 
     .form {
         width: 100%;
+    }
+
+    #cart-items {
+        width: 90%;
+        margin: 0 auto;
     }
 }

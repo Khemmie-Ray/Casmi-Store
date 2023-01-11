@@ -4,6 +4,8 @@ const cardimages = document.querySelector(".cardImg");
 const link =
   "https://api.unsplash.com/search/photos?query=fashion&per_page=20&client_id=RCPdqXnOWsf2C1dFCQlPSmsfwMREmSW-wrETwp7i-qU";
 
+  // The function that redirects to the product page when an item is clicked on
+
 function getProduct(event) {
   const data = JSON.parse(localStorage.getItem("Products"));
   const id = event.currentTarget.getAttribute("data-id");
@@ -12,6 +14,8 @@ function getProduct(event) {
   const url = window.location.href.replace("shop.html", "product.html");
   window.location.href = url;
 }
+
+// function for making request calls to the Unsplash API
 
 function fetchProducts() {
   fetch(link, {
@@ -32,4 +36,3 @@ function fetchProducts() {
       imageContainer.innerHTML = products.join(" ");
     });
 }
-

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Casmi Store</title>
     <link rel="stylesheet" href="Styles/index.css" />
+    <link rel="stylesheet" href="Styles/product.css">
     <script src="index.js" defer></script>
   </head>
   <body>
@@ -29,10 +30,12 @@
         </div>
       </header>
 
-      <main>
-        <div class="cart-item" id="cart-items">
-
+      <main class="cart-wrapper">
+        <div class="cart-items" id="cart-items">
         </div>
+        <div class="paymentEl">
+        <button class="paymentBtn">Make payment</button>
+      </div>
       </main>
 
       <footer>
@@ -44,17 +47,21 @@
       </footer>
     </div>
     <script>
-      const cartItems = JSON.parse(localStorage.getItem("cart"));
+    const cartItems = JSON.parse(localStorage.getItem("cart"));
+    const randomPrice = Math.floor(Math.random() * 300);
       const cartDiv = document.getElementById("cart-items");
       console.log(cartItems);
-      cartDiv.innerHTML = cartItems.map((item, index) =>
-          `<div class="cart-item" data-id=${item.id}>
-          <img src=${item.urls.small} alt=${item.alt_description} />
+      cartDiv.innerHTML = cartItems
+        .map(
+          (item, index) =>
+            `<div class="cart-item" data-id=${item.id}>
+          <img src=${item.urls.small} alt=${item.alt_description} class="cartImgs"/>
           <h4>${item.id}</h4>
-          <h5>price</h5>
-          <button onclick="removeFromCart(event)">Remove</button>
-          </div>`
-          ).join("");
+          <h5 class="cart-price">$${randomPrice}</h5>
+          <button onclick="removeFromCart(event)" class="removeBtn">Remove</button>
+          <hr>
+        </div>`
+        ).join("");
 
       function removeFromCart(e) {
         const localCart = JSON.parse(localStorage.getItem("cart"));
@@ -63,6 +70,7 @@
         localStorage.setItem("cart", JSON.stringify(newCart));
         window.location.reload();
       }
-    </script> 
+
+    </script>
   </body>
 </html>

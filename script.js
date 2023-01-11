@@ -10,6 +10,8 @@ toSearch.addEventListener('change', myFunction)
     window.location.href = url;
     }
 
+    // writing the function that allows users to select from the pre-defined options and makes a request call based on the current option to the API
+
 function myFunction(evt) {
     let dataOption = evt.target.value;
 
