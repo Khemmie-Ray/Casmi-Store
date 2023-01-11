@@ -226,6 +226,10 @@ textarea {
     margin: 0 auto;
   }
 
+  .forCart {
+    height: 100vh;
+  }
+
 /* =============================
         Media Queries 
 ==============================*/

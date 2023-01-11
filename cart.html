@@ -10,7 +10,7 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <div class="main-container">
+    <div class="main-container forCart">
       <header>
         <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
     <img src="images/icon-menu.svg" alt="" class="mobileMenu">
@@ -50,7 +50,7 @@
     const cartItems = JSON.parse(localStorage.getItem("cart"));
     const randomPrice = Math.floor(Math.random() * 300);
       const cartDiv = document.getElementById("cart-items");
-      console.log(cartItems);
+      
       cartDiv.innerHTML = cartItems
         .map(
           (item, index) =>

@@ -4,7 +4,6 @@ const exploreImg = document.querySelector('#eImg')
 toSearch.addEventListener('change', myFunction)
 
     const getProduct = (product) => {
-    console.log(product)
     localStorage.setItem("product", JSON.stringify(product))
     const url = window.location.href.replace("explore.html", "product.html");
     window.location.href = url;
